@@ -53,6 +53,32 @@ a {
     font-weight: 300;
     line-height: 1.67;
 }
+.control {
+    display: flex;
+    column-gap: 18px;
+}
+.control__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    color: #575f66;
+    background: #fff;
+}
+.control__btn:hover {
+    border-color: #2e80ce;
+    color: #fff;
+    background: #2e80ce;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.control-next-icon {
+    rotate: 180deg;
+}
 /* header */
 .header {
     padding-top: 30px;
@@ -361,7 +387,7 @@ a {
 }
 /* Member */
 .member {
-    padding-top: 85px 0;
+    padding: 85px 0;
 }
 .member__heading {
     display: flex;
@@ -377,6 +403,10 @@ a {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
 }
+.member__control {
+    margin-top: 38px;
+    justify-content: center;
+}
 .member-item__img-bg {
     background: #eaf6ff;
     padding-top: 28px;
@@ -384,6 +414,14 @@ a {
     overflow: hidden;
 }
 .member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+.member-item:hover .member-item__title {
+    color: red;
+    transform: scale(1.1);
+}
+.member-item:hover .member-item__name {
+    color: #2e80ce;
     transform: scale(1.1);
 }
 .member-item__thumb {
@@ -409,31 +447,133 @@ a {
     color: #575f66;
 }
 /* member control */
-.member__control {
-    margin-top: 38px;
-    display: flex;
-    justify-content: center;
-    column-gap: 18px;
+
+/* Install */
+.install {
+    margin-top: 180px;
 }
-.member__control-btn {
+.install__inner {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid #575f66;
-    outline: none;
-    color: #575f66;
-    background: #fff;
-}
-.member__control-btn:hover {
-    border-color: #2e80ce;
-    color: #fff;
+    justify-content: space-around;
+    border-radius: 4px;
     background: #2e80ce;
-    cursor: pointer;
+}
+.install__img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+.install__content {
+    width: 50%;
+}
+.install__heading {
+    max-width: 489px;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #fff;
+}
+.install__desc {
+    width: 586px;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 1.6;
+    color: #fff;
+}
+.install__row {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
+}
+/* News */
+.news {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+.news__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news__heading {
+    max-width: 470px;
+}
+.news__more {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-decoration-line: underline;
+    text-underline-offset: 4px; /*cho dòng gạch chân ở dưới tụt xuống*/
+    color: #10375c;
+}
+.news_control {
+    margin-top: 28px;
+}
+.news__list {
+    column-gap: 30px;
+    display: flex;
+    max-width: 570px;
+}
+.news-item {
+    width: 50%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.news-item:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.news-item:hover .news-item__body {
+    border-color: #fff;
+}
+.news-item:hover .news-item__img {
+    transform: scale(1.1);
+}
+.news-item:hover .news-item__more {
+    color: #2e80ce;
+}
+.news-item__thumb {
+    overflow: hidden;
+}
+.news-item__img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    display: block;
     transition: 0.25s;
 }
-.member__control-next-icon {
-    rotate: 180deg;
+.news-item__body {
+    padding: 24px 24px 16px;
+    border: none;
+    border: 1px solid #e8ebee;
+    border-radius: 0 0 12px 12px;
+    background: #fff;
+    transition: 0.25s;
+}
+.news-item__heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62;
+    color: #10375c;
+}
+.news-item__desc {
+    width: 226px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #575f66;
+}
+.news-item__more {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #10375c;
 }
