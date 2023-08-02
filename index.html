@@ -91,6 +91,12 @@
         <!-- Link css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Link animation AOS -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -156,40 +162,40 @@
             <!-- Header top Hero -->
             <div class="header-top-hero">
                 <div class="container">
-                <section class="hero">
-                    <!-- Hero content -->
-                    <section class="hero__content">
-                        <h1 class="hero__heading">
-                            Exceptional dental care for all ages.
-                        </h1>
-                        <p class="hero__desc">
-                            Exceptional dental care for all ages. Your great
-                            smile begins with a great dentist.
-                        </p>
-                        <div class="hero__row">
-                            <a href="#!" class="btn">Book Online</a>
-                            <span class="hero__phone"
-                                >or call (123) 456-7890</span
-                            >
+                    <section class="hero">
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <h1 class="hero__heading " data-aos="fade-up">
+                                Exceptional dental care for all ages.
+                            </h1>
+                            <p class="hero__desc">
+                                Exceptional dental care for all ages. Your great
+                                smile begins with a great dentist.
+                            </p>
+                            <div class="hero__row">
+                                <a href="#!" class="btn">Book Online</a>
+                                <span class="hero__phone"
+                                    >or call (123) 456-7890</span
+                                >
+                            </div>
+                        </section>
+                        <!-- Hero media -->
+                        <div class="hero__media">
+                            <figure class="hero__images">
+                                <img
+                                    src="./assets/img/hero-01.jpg"
+                                    alt=""
+                                    class="hero__img"data-aos="flip-left"
+                                />
+                                <img
+                                    src="./assets/img/hero-02.jpg"
+                                    alt=""
+                                    class="hero__img" data-aos="fade-down-left"
+                                />
+                            </figure>
                         </div>
                     </section>
-                    <!-- Hero media -->
-                    <div class="hero__media">
-                        <figure class="hero__images">
-                            <img
-                                src="./assets/img/hero-01.jpg"
-                                alt=""
-                                class="hero__img"
-                            />
-                            <img
-                                src="./assets/img/hero-02.jpg"
-                                alt=""
-                                class="hero__img"
-                            />
-                        </figure>
-                    </div>
-                </section>
-            </div>
+                </div>
             </div>
         </header>
         <!-- main -->
@@ -209,13 +215,13 @@
                             <img
                                 src="./assets/img/service-01.jpg"
                                 alt=""
-                                class="service__img"
+                                class="service__img"data-aos="zoom-in"
                             />
                         </figure>
                         <div>
-                            <div class="service__list">
+                            <div class="service__list" data-aos="fade-left">
                                 <!-- service item 1 -->
-                                <section class="service-item">
+                                <section class="service-item" >
                                     <div class="service-item__icon">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -824,5 +830,9 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

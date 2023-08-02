@@ -134,8 +134,7 @@ a {
 }
 /* Header top fixed*/
 .header-fixed {
-    width: 100%; 
-    background: #10375c;
+    width: 100%;
     padding: 20px 0;
     position: fixed;
     background: #10375c;
